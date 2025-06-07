@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Pass Application</title>
+</head>
+<body>
+    
+    <center>
+    <div style="border: 2px solid; border-radius: 20px; width: fit-content; height: fit-content; padding: 10px; padding-left: 40px; padding-right: 40px;">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/05/TSRTC_LOGO.png" alt="TSRTC LOGO" width="50px" height="50px">
+        <h2>TELANGANA STATE ROAD TRNASPORT CORPORATION</h2>
+        <h2>GENERAL BUS PASS APPLICATION</h2>
+    </div>
+    <div style="width: fit-content; height: fit-content; padding: 10px;">
+    <form action="">
+        <fieldset>
+            <legend>Applicant Details</legend>
+            <table cellspacing="20px">
+                <tr>
+                    <td>
+                        <label for="Name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="Name" name="ApplicantName" required maxlength="20">
+                    </td>
+                    <td>
+                        <label for="ParentName">Father/Gaurdien Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" id="ParentName" name="ParentName" required maxlength="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="DOB">Date of Birth:</label>
+                    </td>
+                    <td>
+                        <input type="date" id="DOB" required Name="DateOfBirth">
+                    </td>
+                    <td>
+                        <label for="Gender">Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="Male" name="Gender">
+                        <label for="Male">Male</label>
+                        <input type="radio" id="Female" name="Gender">
+                        <label for="Female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Age">Age As On:</label>
+                    </td>
+                    <td>
+                        <textarea name="Years" id="Years" rows="1" cols="1" required></textarea>
+                        <label for="Years">Year(s)</label>
+                        <textarea name="Months" id="Months" rows="1" cols="1" required></textarea>
+                        <label for="Months">Month(s)</label>
+                        <textarea name="Days" id="Days" rows="1" cols="1" required></textarea>
+                        <label for="Days">Day(s)</label>
+                    </td>
+                    <td>
+                        <label for="Aadhar">AadharNo:</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="Aadhar" name="Aadhar" required maxlength="12">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Whatsapp">Whatsapp No:</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="Whatsapp" name="WhatsappNum" required maxlength="10">
+                    </td>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="Email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Photo">Photo:</label>
+                    </td>
+                    <td>
+                        <input type="file" id="Photo" accept=".jpeg, .jpg" name="Photo">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Residental Address Details</legend>
+            <table cellspacing="20px">
+                <tr>
+                    <td>
+                        <label for="Address">Applicant's Address:</label>
+                    </td>
+                    <td>
+                        <pre><textarea name="Address" id="Address" rows="4" ></textarea>       </pre>
+                    </td>
+                    <td>
+                        <label for="District">District:</label>
+                    </td>
+                    <td>
+                        <pre><select name="District" id="District">
+                            <option selected disabled>--select--</option>
+                            <option value="HYDERABAD">HYDERABAD</option>
+                        </select>                        </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Mandal">Mandal:</label>
+                    </td>
+                    <td>
+                        <select name="Mandal" id="Mandal">
+                            <option selected disabled>--select--</option>
+                            <option value="HYDERABAD">HYDERABAD</option>
+                        </select>
+                    </td>
+                    <td>
+                        <label for="Village">Village:</label>
+                    </td>
+                    <td>
+                        <select name="Village" id="Village">
+                            <option selected disabled>--select--</option>
+                            <option value="HYDERABAD">HYDERABAD</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Pincode">Pincode:</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="Pincode" name="Pincode" required maxlength="6">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Pass Type Details</legend>
+            <table cellspacing="20px">
+                <tr>
+                    <td>
+                        <label for="city">City:</label>
+                    </td>
+                    <td>
+                        <select name="city" id="city">
+                            <option selected disabled>--select--</option>
+                            <option value="HYDERABAD">HYDERABAD</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="PassType">Pass Type:</label>
+                    </td>
+                    <td>
+                        <select name="PassType" id="PassType">
+                            <option selected disabled>--select--</option>
+                            <option value="GreaterPass">Greater Pass</option>
+                            <option value="General Ordinary Route Pass MTYL">General Ordinary Route Pass MTYL</option>
+                            <option value="Ordinay Pass">Ordinary Pass</option>
+                            <option value="Metro Pass">Metro Pass</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="FromPlace">From Place District:</label>
+                    </td>
+                    <td>
+                        <pre><input type="text" id="FromPlace" name="FromPlace" required>      </pre>
+                    </td>
+                    <td>
+                        <label for="ToPlace">To Place District:</label>
+                    </td>
+                    <td>
+                        <pre>      <input type="text" id="ToPlace" name="ToPlace" required></pre>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Mode of Payment & Pass Collection</legend>
+            <table cellspacing="20px">
+                <tr>
+                    <td>
+                        <label for="PaymentMode">PaymentMode:</label>
+                    </td>
+                    <td>
+                        <select name="PaymentMode" id="PaymentMode">
+                            <option selected disabled>--select--</option>
+                            <option value="PayAtCounter">Pay at Counter</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="PassDeliveryMode">Pass Delivery Mode:</label>
+                    </td>
+                    <td>
+                        <select name="PassDeliveryMode" id="PassDeliveryMode">
+                            <option selected disabled>--select--</option>
+                            <option value="AtCounter">At Counter</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Centre">Center at which you want to Collect Pass:</label>
+                    </td>
+                    <td>
+                        <pre><select name="Centre" id="Centre">
+                            <option selected disabled>--select--</option>
+                            <option value="Charminar RTC">RTC Charminar</option>
+                            <option value="Airport RTC">RTC Airport</option>
+                            <option value="KPHB RTC">RTC KPHB</option>
+                        </select>                                                 </pre>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        </div>
+    </form>
+    <img src="https://p1.hiclipart.com/preview/21/950/359/free-kpop-logo-captcha-png-clipart.jpg" alt="captch" width="300px" height="50px"><br><br>
+    <input type="text"><br><br>
+    <button>SUBMIT</button>
+    </center> 
+    
+
+    
+    
+</body>
+</html>

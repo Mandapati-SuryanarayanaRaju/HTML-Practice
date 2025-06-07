@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms practice</title>
+</head>
+<body>
+    <center>
+        <form action="">
+        <table border="2px" cellspacing="5" cellpadding="10">
+            <tr>
+                <td>
+                    <label for="Name">Enter Name:</label>
+                </td>
+                <td colspan="5">
+                    <input type="text" id="Name" name="UserName" maxlength="30">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Password">Enter Password:</label>
+                </td>
+                <td colspan="5">
+                    <input type="password" id="Password" name="UserPassword" maxlength="8">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Address">Enter Address:</label>
+                </td>
+                <td colspan="5">
+                    <textarea name="Address" id="Address" rows="6" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="SelectGame">Select Game:</label>
+                </td>
+                <td colspan="5">
+                    <input type="checkbox" id="Hockey" name="game">
+                    <label for="Hockey">Hockey</label><br>
+                    <input type="checkbox" id="Football" name="game">
+                    <label for="Football">Football</label><br>
+                    <input type="checkbox" id="Badminton" name="game">
+                    <label for="Badminton">Badminton</label><br>
+                    <input type="checkbox" id="Cricket" name="game">
+                    <label for="Cricket">Cricket</label><br>
+                    <input type="checkbox" id="Volleyball" name="game">
+                    <label for="Volleyball">Volleyball</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Gender">Gender:</label>
+                </td>
+                <td colspan="5">
+                    <input type="radio" id="Male" name="Gender">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" name="Gender">
+                    <label for="Female">Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Age">Select ur age:</label>
+                </td>
+                <td colspan="5">
+                    <select name="Age" id="Age">
+                        <option selected disabled>--select--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Photo">Select Photo:</label>
+                </td>
+                <td colspan="5">
+                    <input type="file" name="Photo" id="Photo" accept=".jpeg, .jpg">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button value="Click">Click Me</button>
+                </td>
+                <td colspan="2" align="center">
+                    <button value="reset">Reset</button>
+                </td>
+                <td colspan="2" align="center">
+                    <button valu="SUBMIT">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </center>
+</body>
+</html>
